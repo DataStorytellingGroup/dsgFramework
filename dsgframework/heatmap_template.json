@@ -1,0 +1,54 @@
+{
+    "query": {
+        "dataset": "1ee4fa2d6c0549ee955b63c6b1359827",
+        "metrics": [ "count_sum", "lat_avg", "lon_avg"],
+        "facets": ["tx","ty"],
+        "namespace": {
+            "tx": {
+                "source": [ "px" ],
+                "apply": [{ "type": "transform", "params": [ 256 ], "fn": "mod"}]
+            },
+            "ty": {
+                "source": ["py"],
+                "apply": [{ "type": "transform", "params": [ 256 ], "fn": "mod"}]
+            },
+            
+            "buffer": {
+                "source": [{ "default": 0, "$input": "buffer"}]
+            },
+
+            "px": {
+                "source": [ "longitude", "z" ],
+                "apply": [{ "type": "transform", "fn": "lon_to_x"}]
+            },
+            "py": {
+                "source": [ "latitude", "z" ],
+                "apply": [{ "type": "transform", "fn": "lat_to_y" }]
+            },
+
+            "count_sum": {
+                "source": ["count"],
+                "apply": [{ "type": "aggregate", "fn": "sum" }]
+            },
+
+            "lat_avg": {
+                "source": ["latitude"],
+                "apply": [{ "type": "aggregate", "fn": "average" }]
+            },
+            "lon_avg": {
+                "source": ["longitude"],
+                "apply": [{ "type": "aggregate", "fn": "average" }]
+            },
+            "y": { "source": [{ "$input": "y" }]},
+            "x": { "source": [{ "$input": "x" }]},
+            "z": { "source": [{ "$input": "z" }]},
+            "pixels": {"source": ["px","py"]}
+        },
+        "filters": [{
+            "pixels": {
+                "$pixel_within_tile": [ "x", "y", "buffer"]
+            }
+        }]
+    },
+    "description": "heatmap template"
+}

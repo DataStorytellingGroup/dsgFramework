@@ -1,0 +1,112 @@
+@import url('http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic');
+
+::selection { 
+  background-color: white;
+  color: black;
+}
+
+.cover {
+  color: #bbbbbb;
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,1) 33%, rgba(0,0,0,0.75) 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,1) 33%,rgba(0,0,0,0.75) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center,  rgba(0,0,0,1) 33%,rgba(0,0,0,0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#f2000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+/* Brand: Data Storytelling Group */
+.brand {
+  color: #bbb;
+}
+
+/* Title, Description, Exlore button & Credits */
+.cover .title {
+  color: white;
+}
+
+.cover .description {
+  color: inherit;
+}
+
+.cover .loading {
+  color: #F7371E;
+}
+
+.explore, .button {
+  color: white;
+  background-color: #F7371E;
+}
+
+.explore:hover, .button:hover {
+  background-color: white;
+  color:black;
+}
+
+.credits {
+  color: #888;
+}
+
+.chrome a {
+  color: blue;
+}
+
+.chrome:hover {
+  background-color: blue;
+  color:white;
+}
+
+/* BACK TO COVER ********************************/
+.back-to-cover {
+  color: white;
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#99ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.back-to-cover:hover {
+  color: #F7371E;
+}
+
+/* SHARE ICONS ********************************/
+.share-menu {
+  background-color: white;
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#99ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.share-icon {
+  color: white;
+}
+
+.share-icon:hover {
+  color: #F7371E;
+}
+
+/* COOKIES ********************************/
+.cookies-info {
+  background-color: black;
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#99ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.cookies-info p {
+  color: white;
+}
+
+.legend-wrapper .legend {
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.legend-wrapper .show-hide-button {
+  background-color: rgba(215,25,10,1);
+}
+
+.legend-wrapper .show-hide-button:hover {
+  background-color: #F7371E;
+}

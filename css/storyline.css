@@ -1,0 +1,11 @@
+.storyline {
+  color: white;
+  font-size: 30px;
+  max-width: 50%;
+  margin: 30px 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+

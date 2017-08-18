@@ -1,0 +1,489 @@
+@import url('http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic');
+
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes loading {
+    0%   {color: #F7371E;}
+    50%  {color: black;}
+    100%  {color: #F7371E;}
+}
+
+/* Standard syntax */
+@keyframes loading {
+    0%   {color: #F7371E;}
+    50%  {color: black;}
+    100%  {color: #F7371E;}
+}
+
+::selection { 
+  background-color: white;
+  color: black;
+}
+
+.cover {
+  color: #bbb;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index:100;
+  font-family: 'Lora';
+  overflow: auto;
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,1) 33%, rgba(0,0,0,0.75) 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,1) 33%,rgba(0,0,0,0.75) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center,  rgba(0,0,0,1) 33%,rgba(0,0,0,0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#f2000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  pointer-events:none;
+}
+
+.middle {
+  margin: 0;
+  position: absolute;
+  text-align: center; 
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* Brand: Data Storytelling Group */
+.brand {
+  color: #bbb;
+  margin-bottom: 20px;
+
+}
+
+.brand .logo {
+  background-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjA1IDEwNSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjA1IDEwNTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LnN0MHtmaWxsOiNGNzM3MUU7fS5zdDF7b3BhY2l0eTowLjM7ZmlsbDojQjNCM0IzO30uc3Qye29wYWNpdHk6MC4zO2ZpbGw6IzgwODA4MDt9LnN0M3tvcGFjaXR5OjAuMztmaWxsOiM5OTk5OTk7fS5zdDR7b3BhY2l0eTowLjM7ZmlsbDojQ0NDQ0NDO30uc3Q1e29wYWNpdHk6MC4zO2ZpbGw6I0U2RTZFNjt9PC9zdHlsZT48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTE0LjUsNTcuMWMtNC45LTUuNS0xMS40LTkuNi0xOC45LTExLjJsMCwwYy04LTItMTQuMi04LjQtMTYuMS0xNi40TDY5LjMsMzkuOGMxLjQsMi45LDMuMyw1LjcsNS40LDguMWM0LjksNS41LDExLjQsOS42LDE4LjksMTEuMmwwLDBjNy42LDIsMTMuNiw3LjgsMTUuOCwxNS40bDEwLTEwQzExOC4xLDYxLjgsMTE2LjQsNTkuMywxMTQuNSw1Ny4xeiIvPjxjaXJjbGUgY2xhc3M9InN0MSIgY3g9IjEwMS4xIiBjeT0iMjQuNCIgcj0iMjIuMyIvPjxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0yMy4xLDI4LjNoLTkuMnY0NC42aDkuMmMxMi4zLDAsMjIuMy0xMCwyMi4zLTIyLjNDNDUuNCwzOC4zLDM1LjQsMjguMywyMy4xLDI4LjN6Ii8+PHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIwLjgsMjguMyAwLjgsNTAuNiAwLjgsNzIuOSAxMy45LDcyLjkgMTMuOSwyOC4zICIvPjxjaXJjbGUgY2xhc3M9InN0MyIgY3g9Ijg4IiBjeT0iODAuNiIgcj0iMjIuMyIvPjxwYXRoIGNsYXNzPSJzdDQiIGQ9Ik0xNjguOSw0NGgyMS4zYy0yLjgtOS4xLTExLjMtMTUuOC0yMS4zLTE1LjhjLTEyLjMsMC0yMi4zLDEwLTIyLjMsMjIuM2MwLDEyLjMsMTAsMjIuMywyMi4zLDIyLjNjMTAsMCwxOC41LTYuNiwyMS4zLTE1LjdoLTIxLjNWNDR6Ii8+PHBhdGggY2xhc3M9InN0NSIgZD0iTTIwMy42LDQ0aC0xMy40YzAuNiwyLjEsMSw0LjMsMSw2LjVjMCwyLjMtMC4zLDQuNS0xLDYuNmMtMi44LDkuMS0xMS4zLDE1LjctMjEuMywxNS43djEzYzE3LjIsMCwzMS42LTEyLjQsMzQuNy0yOC43YzAuNC0yLjEsMC42LTQuMywwLjYtNi42VjQ0SDIwMy42eiIvPjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xOTAuMiw0NGMwLjYsMi4xLDEsNC4zLDEsNi41YzAsMi4zLTAuMyw0LjUtMSw2LjZoLTIxLjNWNDRIMTkwLjJ6Ii8+PC9zdmc+DQo=);
+  height:105px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 160px;
+  margin-bottom: 0px;
+  opacity: 1;
+}
+
+.brand .present {
+  /*line-height: 22px;*/
+  font-size: 18px; 
+  color: inherit;
+  padding: 10px;
+}
+
+
+.cover .title {
+  color: white;
+  font-size: 24px;
+  line-height: 28px;
+  padding: 0 10px;
+  max-width: 600px;
+  font-weight: 300;
+  pointer-events:auto;
+}
+
+.cover .description {
+  color: inherit;
+  font-size: 16px;
+  /*padding: 20px;*/
+  max-width: 600px;
+  margin: auto;
+  margin: 20px 20px;
+  pointer-events:auto;
+}
+
+
+.credits {
+  color: #888;
+  text-align: center;
+  pointer-events:auto;
+}
+
+.cover .loading {
+  color: #F7371E;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-name: loading; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+  animation-name: loading;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.action-container{
+  position: relative;
+  height: 80px;
+}
+
+.chrome {
+  padding: 0 20px;
+  max-width: 400px;
+  margin: auto;
+
+}
+.chrome .warning {
+  background-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIzNnB4IiBoZWlnaHQ9IjM2cHgiIHZpZXdCb3g9IjAgMCAzNiAzNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzYgMzYiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxzeW1ib2wgIGlkPSJFeGNsYW1hdGlvbiIgdmlld0JveD0iLTEuNDU1IC01Ljk0MSAyLjkxMSAxMS44ODMiPjxwYXRoIGZpbGw9IiNGRjMxNTQiIGQ9Ik0wLjAwMy0zLjI5NWMtMC43NTYsMC0xLjM2NS0wLjU5Ni0xLjM2NS0xLjMyYzAtMC43MzIsMC42MTMtMS4zMjYsMS4zNjUtMS4zMjZzMS4zNjEsMC41OTQsMS4zNjEsMS4zMjZDMS4zNjQtMy44OTEsMC43NTUtMy4yOTUsMC4wMDMtMy4yOTV6IE0wLjAwMy0xLjk2M2MwLjU2NiwwLDEuMDU3LDAuNDQ3LDEuMDg4LDAuOTkybDAuMzYzLDUuOTE2YzAuMDM1LDAuNTQ3LTAuNjE1LDAuOTk2LTEuNDUzLDAuOTk2Yy0wLjgzMiwwLTEuNDktMC40NDktMS40NTUtMC45OTZsMC4zNjMtNS45MTZDLTEuMDYtMS41MTYtMC41NjUtMS45NjMsMC4wMDMtMS45NjN6Ii8+PC9zeW1ib2w+PHVzZSB4bGluazpocmVmPSIjRXhjbGFtYXRpb24iICB3aWR0aD0iMi45MTEiIGhlaWdodD0iMTEuODgzIiB4PSItMS40NTUiIHk9Ii01Ljk0MSIgdHJhbnNmb3JtPSJtYXRyaXgoMS4wMTggMCAwIC0xLjAxOCAxOCAyMC44OTc1KSIgb3ZlcmZsb3c9InZpc2libGUiLz48Zz48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNGNzM3MUUiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgZD0iTTIuNTkzLDMyLjU2NmMtMS4xLDAtMS41NS0wLjc3OS0xLTEuNzMyTDE3LDQuMTQ5YzAuNTUtMC45NTMsMS40NS0wLjk1MywyLDBsMTUuNDA3LDI2LjY4NWMwLjU0OSwwLjk1MywwLjEsMS43MzItMSwxLjczMkgyLjU5M3oiLz48L2c+PC9zdmc+);
+  height:35px;
+  width: 100%;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.chrome a {
+  color: blue;
+  pointer-events:auto;
+}
+
+.chrome:hover {
+  background-color: blue;
+  color:white;
+}
+
+
+.explore, .button {
+  color: white;
+  background-color: #F7371E;
+  padding: 10px 15px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+  border-radius: 2px;
+  margin: 15px 0 0;
+  pointer-events:auto;
+}
+
+.explore:hover, .button:hover {
+  background-color: white;
+  color:black;
+  /*font-weight:bold; */
+}
+
+
+
+
+
+
+
+/* BACK TO COVER ********************************/
+
+.back-to-cover {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+  font-family: "fontawesome";
+  color: white;
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#99ffffff',GradientType=0 ); /* IE6-9 */
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all 0.8s ease-out;
+  -moz-transition: all 0.8s ease-out;
+  -ms-transition: all 0.8s ease-out;
+  -o-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out;
+}
+
+.back-to-cover:before {
+  width: 40px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+
+.back-to-cover:hover {
+  color: #F7371E;
+}
+
+
+/* FULLSCREEN TO COVER ********************************/
+
+.fs {
+  position: fixed;
+  z-index: 10;
+  right: 0px;
+  top: 50px;
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+  font-family: "fontawesome";
+  color: white;
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#99ffffff',GradientType=0 ); /* IE6-9 */
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all 0.8s ease-out;
+  -moz-transition: all 0.8s ease-out;
+  -ms-transition: all 0.8s ease-out;
+  -o-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out;
+}
+
+.fs:before {
+  width: 40px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+
+.fs:hover {
+  color: #F7371E;
+}
+
+
+
+
+
+/* SHARE ICONS ********************************/
+
+.share-menu {
+  z-index: 98;
+  position: fixed;
+  font-family: "fontawesome";
+  font-size: 20px;
+  background-color: white;
+  margin: 20px;
+  right: 0px;
+  top: 100px;
+  border-radius: 20px;
+  padding: 4px 0;
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#99ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.share-icon {
+  color: white;
+  opacity: 0.8;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  -webkit-transition: all 0.8s ease-out;
+  -moz-transition: all 0.8s ease-out;
+  -ms-transition: all 0.8s ease-out;
+  -o-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out;
+}
+
+.share-icon:before {
+  width: 40px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top: 5px;
+}
+
+.share-icon:hover {
+  opacity: 1;
+  color: #F7371E;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -ms-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+
+
+/* COOKIES ********************************/
+
+.cookies-info {
+  font-family: "Lora";
+  z-index: 99;
+  background-color: black;
+  position: fixed;
+  top: 0px;
+  padding-bottom: 20px;
+  width: 100%;
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#99ffffff',GradientType=0 ); /* IE6-9 */
+
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.cookies-info p {
+  color: white;
+  margin: 15px 20px 0;
+  max-width: 480px;
+  opacity: 0.8;
+}
+
+.cookies-info .button {
+  float: right;
+  text-transform: capitalize;
+  letter-spacing: 0px;
+}
+
+.blur {
+  -webkit-filter: blur(5px); /* Safari */
+  filter: blur(5px);
+}
+
+
+/* Font style classes ********************************/
+
+.italic {
+  font-style: italic;
+  font-size: inherit;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: inherit;
+}
+
+.accent {
+  color: #F7371E;
+  font-size: inherit;
+}
+
+.highlight {
+  background-color: black;
+  padding: 4px;
+  font-size: inherit;
+}
+
+
+
+
+
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+   .brand .logo {
+    height: 75px;
+    background-size: 120px;
+  }
+  .brand .present { 
+    font-size: 14px;
+    padding: 10px;
+  }
+  .cover .title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .cover .description {
+    font-size: 12px;
+    margin: 12px 20px; 
+  }
+
+  .brand {
+    margin-bottom: 0px;
+  }
+
+  .cover .credits {
+    font-size: 12px;
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+  .brand .logo {
+    height: 75px;
+    background-size: 120px;
+  }
+  .brand .present { 
+    font-size: 14px;
+    padding: 10px;
+  }
+  .cover .title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .cover .description {
+    font-size: 12px;
+    margin: 12px 20px; 
+  }
+
+  .brand {
+    margin-bottom: 0px;
+  }
+
+  .cover .credits {
+    font-size: 12px;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  .brand .logo {
+    height: 100px;
+    background-size: 160px;
+  }
+  .brand .present { 
+    font-size: 16px;
+    padding: 10px;
+  }
+  .cover .title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .cover .description {
+    font-size: 14px;
+    margin: 14px 20px; 
+  }
+
+  .brand {
+    margin-bottom: 0px;
+  }
+
+  .cover .credits {
+    font-size: 14px;
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+
+}
+
+
+

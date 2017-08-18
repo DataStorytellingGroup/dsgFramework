@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>
+
+  <!-- For Robots -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <meta name='language' content='EN'>
+  <meta name='robots' content='index,follow'>
+
+  <!-- Information about the website -->
+  <meta name="title" content="Name of the project" />
+  <meta name='keywords' content='Data Vizualization, Data'>
+  <meta name='description' content='This is a small description about the project'>
+  <meta name='subject' content='your websites subject'>
+  
+  <!-- Author information -->
+  <meta name='copyright' content='Daniel Gonzalez'>
+  <meta name='author' content='Daniel Eduardo Gonzalez Almarza'>
+  <meta name='designer' content='Daniel Eduardo Gonzalez Almarza'>
+  <meta name='reply-to' content='todanielgonzalez@gmail.com'>
+  
+  <!-- Browser icon -->
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="stylesheet" type="text/css" href="css/components.css" />
+  <link rel="stylesheet" type="text/css" href="css/legend.css" />
+  <link rel="stylesheet" type="text/css" href="css/cover.css" />
+  <link rel="stylesheet" type="text/css" href="css/theme-white.css" />
+  <link rel="stylesheet" type="text/css" href="css/storyline.css" />
+  
+  <!-- JS external libs -->
+  
+  <script type="text/javascript" src="dsgframework/libs/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="dsgframework/libs/d3.min.js"></script>
+  <script type="text/javascript" src="dsgframework/libs/d3-shape.v1.min.js"></script>
+  <script type="text/javascript" src="dsgframework/libs/chroma.min.js"></script>
+  <script type="text/javascript" src="dsgframework/libs/numeral.min.js"></script>
+  <script type="text/javascript" src="dsgframework/libs/moment.min.js"></script>
+  
+  <script type="text/javascript" src="dsgframework/libs/screenfull.min.js"></script>
+  <script type="text/javascript" src="dsgframework/libs/typed.js"></script>
+  <script type="text/javascript" src="dsgframework/libs/howler.min.js"></script>
+  <script type="text/javascript" src="dsgframework/libs/FileSaver.min.js"></script>
+  <script type="text/javascript" src="dsgframework/libs/jszip.min.js"></script>
+  <script type="text/javascript" src="dsgframework/libs/jszip-utils.min.js"></script>
+  <script type="text/javascript" src="dsgframework/libs/graphics/svg.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+  
+  <!--  
+  -->
+
+  <!-- HERE JS Libs -->
+  <!-- Map Tiles Apis -->
+  <!-- 
+   -->
+  <script type="text/javascript" src="http://js.api.here.com/v3/3.0/mapsjs-core.js"></script>
+  <script type="text/javascript" src="http://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+  <script type="text/javascript" src="http://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
+  <script type="text/javascript" src="http://js.api.here.com/v3/3.0/mapsjs-ui.js"></script>
+  <script type="text/javascript" src="http://js.api.here.com/v3/3.0/mapsjs-data.js"></script>
+  <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-clustering.js"></script>
+  <script type="text/javascript" src="https://js.datalens.api.here.com/2.3/mapsjs-datalens.js"></script>
+
+  
+  <!-- Degaframework -->
+  <script type="text/javascript" src="dsgframework/app-core.js"></script>
+  <script type="text/javascript" src="dsgframework/storyline.js"></script>
+  <script type="text/javascript" src="dsgframework/math.js"></script>
+  <script type="text/javascript" src="dsgframework/map.js"></script>
+  <script type="text/javascript" src="dsgframework/drawing.js"></script>
+  <script type="text/javascript" src="dsgframework/label.js"></script>
+  <script type="text/javascript" src="dsgframework/cover.js"></script>
+  <script type="text/javascript" src="dsgframework/sound.js"></script>
+  <script type="text/javascript" src="dsgframework/choropleth.js"></script>
+  <script type="text/javascript" src="dsgframework/routing.js"></script>
+  <script type="text/javascript" src="dsgframework/geocoder.js"></script>
+  <script type="text/javascript" src="dsgframework/traffic.js"></script>
+  <script type="text/javascript" src="dsgframework/weather.js"></script>
+  <script type="text/javascript" src="dsgframework/isoline.js"></script>
+  <script type="text/javascript" src="dsgframework/basic-shapes.js"></script>
+  <script type="text/javascript" src="dsgframework/geoinsights.js"></script>
+  
+  <!-- App -->
+  <script type="text/javascript" src="js/scripts.js"></script>
+
+  <title>Degaframework to build fast map visualizations</title>
+
+
+</head>
+<body>
+
+  <div class="app">
+    
+    <div class="title"></div>
+    <div class="storyline"></div>
+    <div id="drawing"></div>
+
+    <div id="basemap"></div>
+    <div class="legend-wrapper minimize">
+      <div class="show-hide-button minimize"></div>
+      <div class="legend">
+        <div class="content">
+          <div class="row">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<footer>
+</footer>

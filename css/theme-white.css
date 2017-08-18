@@ -1,0 +1,131 @@
+@import url('http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic');
+
+::selection { 
+  background-color: black;
+  color: white;
+}
+
+.cover {
+  color: #555;
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 33%, rgba(255,255,255,0.75) 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 33%,rgba(255,255,255,0.75) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 33%,rgba(255,255,255,0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+/* Brand: Data Storytelling Group */
+.brand {
+  color: inherit;
+}
+
+/* Title, Description, Exlore button & Credits */
+.cover .title {
+  color: black;
+}
+
+.cover .description {
+  color: inherit;
+}
+
+.cover .loading {
+  color: #F7371E;
+}
+
+.explore, .button {
+  color: white;
+  background-color: #F7371E;
+}
+
+.explore:hover, .button:hover {
+  background-color: black;
+  color:white;
+}
+
+.credits {
+  color: #888;
+}
+
+.chrome a {
+  color: blue;
+}
+
+.chrome:hover {
+  background-color: blue;
+  color:#555;
+}
+
+/* BACK TO COVER ********************************/
+.back-to-cover {
+  color: black;
+  background: -moz-linear-gradient(top,  rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.6) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#99ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.back-to-cover:hover {
+  color: #F7371E;
+}
+
+/* SHARE ICONS ********************* */
+.share-menu {
+  background-color: white;
+  background: -moz-linear-gradient(top,  rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.6) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#99ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+/* FULLSCREEN TO COVER ********************************/
+
+.fs {
+  color: black;
+  background: -moz-linear-gradient(top,  rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.6) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#99ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.fs:hover {
+  color: #F7371E;
+}
+
+
+
+.share-icon {
+  color: black;
+}
+
+.share-icon:hover {
+  color: #F7371E;
+}
+
+/* COOKIES ********************* */
+.cookies-info {
+  background-color: white;
+  background: -moz-linear-gradient(top,  rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.6) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#99ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.cookies-info p {
+  color: black;
+}
+
+
+/* LEGEND */
+.legend-wrapper .legend {
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.9) 0%, #ffffff 100%);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.9) 0%, #ffffff 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6ffffff', endColorstr='#ffffff', GradientType=0);
+}
+.legend-wrapper .show-hide-button {
+  background-color: black;
+}
+
+.legend-wrapper .show-hide-button:hover {
+  background-color: #F7371E;
+}
+

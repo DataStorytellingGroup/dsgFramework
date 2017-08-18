@@ -1,0 +1,208 @@
+
+
+
+/* ************ Timeline styles ************ */
+
+#timeline {
+  position: absolute;
+  padding: 0px;
+  
+  left: 20px;
+  right: 20px;
+  bottom: 313px;
+
+  max-width: 1200px;
+  
+  /*border-radius: 2px;*/
+  margin: auto;
+  margin-bottom: 20px;
+  
+  z-index: 1;
+  background-color: #ffebe0;
+
+  /*-webkit-box-shadow: 0 4px 15px 0 rgba(0,0,0,.3);*/
+  /*box-shadow: 0 4px 15px 0 rgba(0,0,0,.3);*/
+}
+
+
+/* Play button */
+
+#button-play {
+  
+  width: 10px;
+  height: 20px;
+
+  background-image: url(/assets/PlayPauseIcons.png);
+  background-size:20px 40px;
+  background-position: 0px -20px;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0) !important;
+
+  color: #273142;
+  font-size: 16px;
+  border: none !important;
+
+  position:absolute;
+  bottom: 20px;
+  top: 10px;
+  left: -40px;
+  opacity: 0.5;
+
+  padding: 3px 10px !important;
+  margin-bottom: 0px !important;
+
+  outline: none;
+
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  z-index: 100;
+}
+
+#button-play:hover {
+  opacity: 1;
+}
+
+.paused {
+  background-size:20px 40px;
+  background-position: 0px 0px !important;
+}
+
+
+/* Progress bar Background */
+
+#timeline-slider {
+  position: absolute;
+  left:0px;
+  height: 6px;
+  top: 0px;
+  width: 100%;
+  border: none;
+  /*border-radius: 2px;*/
+  background-color: rgba(255,255,255,0.15);
+}
+
+#timeline-slider::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  height: 6px;
+  top:-1px;
+  border: none;
+  /*-webkit-border-radius: 2px 2px 0 0;*/
+  /*border-radius: 2px 2px 0 0;*/
+  background-color: rgba(215,197,188,0.5);
+}
+
+/* Progress bar */
+
+.slider-fill {
+  position: absolute;
+  left: 0px;
+  right: 100%;
+  height: 6px;
+  top:-1px;
+  min-width: 0.3%;
+  border: none;
+  /*-webkit-border-radius: 2px 2px 0 0;*/
+  /*border-radius: 2px 2px 0 0;*/
+
+  background-color: #124191;
+  opacity: 0.8;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+/* Handle */
+
+#timeline-slider .ui-slider-handle {
+  border: none;
+  background: rgba(255,255,255,0.0);
+  color: #273142;
+  font-weight: 700;
+  position: absolute;
+  top: -4px !important;
+  height: 5px;
+  width: 1%;
+  min-width: 2px !important;
+  line-height: 23px;
+  font-size: 10px;
+  cursor: pointer;
+  margin-top: 3px;
+  outline: none;
+  color: transparent;
+}
+
+/* Text inside handle */
+
+#timeline-slider .ui-slider-handle span {
+  position: relative;
+  bottom: 20px;
+  display: none;
+}
+
+/* Progress bar info text */
+
+#timeline-slider .slider-bubble {
+  background-color: #00c9ff;
+  
+  /*border-radius: 1px;*/
+  color: white;
+  
+  height: 6px;
+  width: 10px;
+
+  position: absolute;
+  bottom: 1px;
+  opacity: 0.9;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* Title + Description */
+.timeline-title {
+  font-size: 15px;
+  padding-left: 0px;
+  position: relative;
+  top: 0px;
+  color: #343e4e;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+}
+
+.timeline-title .description {
+  color: red;
+  color: #404a5a;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.timeline-title .year {
+  float: left;
+  color: #404a5a;
+  font-weight: 300;
+  font-size: 12px;
+  margin-right: 7.6%;
+}
+
+.year-list {
+  position: relative;
+  top: 3px;
+}
+
+.timeline-title .last {
+  margin-right: 0 !important;
+}
